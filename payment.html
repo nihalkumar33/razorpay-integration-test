@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Razorpay Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Executor</title>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
+  <h1>Code Executor</h1>
 
-  <h1>Pay ₹500</h1>
-  <button id="payBtn">Pay Now</button>
+  <label for="lang">Choose language:</label>
+  <select id="lang">
+    <option value="js">JavaScript (Free)</option>
+    <option value="c">C (Free)</option>
+    <option value="python">Python (Premium)</option>
+    <option value="java">Java (Premium)</option>
+  </select>
 
+  <div id="accessMessage" style="margin-top: 10px;"></div>
+  <button id="payBtn" style="display: none;">Unlock Premium</button>
 </body>
 </html>
